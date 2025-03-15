@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="entete">
+            <div class="log">
+                <img src="images/monlogo.png" alt="">
+            </div>
+            
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img src="images/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="" style="height: 30px; width: 30px;"></a></li>
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="service.html" >Services</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+            </ul>
+
+            <ul class="menu">
+                <li class="hideOnMobile"><a href="index.html" >Accueil</a></li>
+                <li class="hideOnMobile"><a href="service.html" >Services</a></li>
+                <li class="hideOnMobile"><a href="blog.html" class="active">Blog</a></li>
+                <li class="hideOnMobile"><a href="apropos.html">A propos</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><img src="images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="" style="height: 30px; width: 30px;"></a></li>
+            </ul>
+        </nav>
+
+        <section class="blog">
+            <h2>Blog</h2>
+            <p class="message">
+                Aucun disponible pour l'instant !
+            </p>
+            <div class="blog-container">
+                <!-- Article 1 -->
+                <!-- <div class="blog-card">
+                    <img src="images/cap.PNG" alt="React">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">Réagir</span>
+                            <span class="date">15 janvier 2024</span>
+                        </div>
+                        <h3>Les meilleures pratiques React en 2024</h3>
+                        <p>Découvrez les meilleures pratiques pour développer des applications React modernes et performantes.</p>
+                        <a href="#">Lire la suite →</a>
+                    </div>
+                </div> -->
+    
+                <!-- Article 2 -->
+                <!-- <div class="blog-card">
+                    <img src="images/cap.PNG" alt="TypeScript">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">Manuscrit</span>
+                            <span class="date">10 janvier 2024</span>
+                        </div>
+                        <h3>Introduction à TypeScript</h3>
+                        <p>Un guide complet pour bien démarrer avec TypeScript dans vos projets web.</p>
+                        <a href="#">Lire la suite →</a>
+                    </div>
+                </div> -->
+    
+                <!-- Article 3 -->
+                <!-- <div class="blog-card">
+                    <img src="images/cap.PNG" alt="Clean Code">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">JavaScript</span>
+                            <span class="date">5 janvier 2024</span>
+                        </div>
+                        <h3>L'art du Clean Code</h3>
+                        <p>Comment écrire du code propre et maintenable dans vos projets JavaScript.</p>
+                        <a href="#">Lire la suite →</a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+    <div class="bas_page">
+        &copy;John.dev. Tous droits réservés.
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+            }
+    </script>
+</body>
+</html>

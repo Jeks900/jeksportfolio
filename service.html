@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="service.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="entete">
+            <div class="log">
+                <img src="images/monlogo.png" alt="">
+            </div>
+            
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img src="images/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="" style="height: 30px; width: 30px;"></a></li>
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="service.html" class="active">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+            </ul>
+
+            <ul class="menu">
+                <li class="hideOnMobile"><a href="index.html" >Accueil</a></li>
+                <li class="hideOnMobile"><a href="service.html" class="active">Services</a></li>
+                <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+                <li class="hideOnMobile"><a href="apropos.html">A propos</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><img src="images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="" style="height: 30px; width: 30px;"></a></li>
+            </ul>
+        </nav>
+
+        <section class="services">
+            <h2>Mes Services</h2>
+            <div class="services-container">
+                <!-- Carte 1 : Développement Frontend -->
+                <div class="service-card">
+                    <img src="images/desktop.png" alt="">
+                    <h3>Développement Frontend</h3>
+                    <p>Création d'interfaces utilisateur</p>
+                    <ul class="point">
+                        <li><img src="images/Vector.png" alt=""> Conception d'interfaces élégantes</li>
+                        <li><img src="images/Vector.png" alt=""> Mise en page responsive et adaptative</li>
+                        <li><img src="images/Vector.png" alt=""> Animations et effets visuels CSS</li>
+                    </ul>
+                </div>
+    
+                <!-- Carte 2 : Développement Backend -->
+                <div class="service-card">
+                    <img src="images/server.png" alt="">
+                    <h3>Développement Backend</h3>
+                    <p>Création de sites dynamiques avec PHP</p>
+                    <ul class="point">
+                        <li><img src="images/Vector.png" alt=""> Gestion de base de données avec MySQL</li>
+                        <li><img src="images/Vector.png" alt=""> Mise en place d'un système d'authentification</li>
+                        <li><img src="images/Vector.png" alt=""> Optimisation des requêtes et des Performances</li>
+                    </ul>
+                </div>
+    
+                <!-- Carte 3 : Architecture logicielle -->
+                <div class="service-card">
+                    <img src="images/figma.png" alt="">
+                    <h3>Design UI/UX avec Figma</h3>
+                    <p>Création de maquettes et prototype</p>
+                    <ul class="point">
+                        <li><img src="images/Vector.png" alt=""> Conception de maquettes attractives</li>
+                        <li><img src="images/Vector.png" alt=""> Organisation des composants et des couleurs</li>
+                        <li><img src="images/Vector.png" alt=""> Création de prototypes interactifs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    <div class="bas_page">
+        &copy;John.dev. Tous droits réservés.
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+
+.about {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.intro {
+    font-size: 20px;
+    color: #667;
+    margin-bottom: 30px;
+}
+
+/* Parcours Professionnel */
+.experience {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.experience h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.job {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.date {
+    font-size: 20px;
+    color: #777;
+    width: 150px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.details {
+    flex: 1;
+}
+
+.details h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.details a {
+    color: #2979ff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
+
+.details p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Formation et Certifications */
+.education-certifications {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.education, .certifications {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: left;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card span {
+    font-size: 14px;
+    color: #777;
+}
+
+.direction img{
+    width: 5%;
+    height: 5%;
+    padding-top: 15px;
+}
+
+
+
+.direction{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.directionA img{
+    width: 5%;
+    height: 5%;
+    padding-top: 15px;
+}
+
+.directionA{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.directionA h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Responsive */
+@media (max-width: 915px) {
+    .education{
+        width: 45%;
+    }
+
+    .education-certifications {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 70px;
+        gap: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .education-certifications {
+        flex-direction: column;
+    }
+    
+    .education, .certifications {
+        width: 100%;
+    }
+    
+    .job {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .date {
+        text-align: left;
+        padding-bottom: 5px;
+    }
+}

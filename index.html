@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="entete">
+            <div class="log">
+                <img src="images/monlogo.png" alt="">
+            </div>
+            
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img src="images/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="" style="height: 30px; width: 30px;"></a></li>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+            </ul>
+
+            <ul class="menu">
+                <li class="hideOnMobile"><a href="index.html" class="active">Accueil</a></li>
+                <li class="hideOnMobile"><a href="service.html">Services</a></li>
+                <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+                <li class="hideOnMobile"><a href="apropos.html">A propos</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><img src="images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="" style="height: 30px; width: 30px;"></a></li>
+            </ul>
+        </nav>
+        <div class="banniere">
+            <div class="banne">
+                <p class="Presentation">
+                    Salut, je suis John
+                </p>
+                <p class="Competences">
+                    Développeur Full Stack passionné par la création <br> d'expériences web exceptionnelles
+                </p>
+                <p class="icons">
+                    <a href=""><img src="images/mail.png" alt=""></a>
+                    <a href=""><img src="images/whatsapp.png" alt=""></a>
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/logo.png" alt="">
+            </div>    
+        </div>    
+    </header>
+    <div class="mesprojets">
+        <h2 id="C1">Mes Projets</h2>
+        <div class="toutcontainer">
+            <div class="container">
+                <img src="images/cap.PNG" alt="">
+                <div class="detail_container">
+                    <p class="titre">
+                        Application Desktop
+                    </p>
+                    <p class="detail">
+                        Application d'enregistrement d'enfant
+                        avec Java et MySQL sur Netbeans IDE 8.O
+                    </p>
+                    <div class="touticon">
+                        <div class="icon">
+                            <img src="images/code.png" alt=""><a href=""><h3>code</h3></a>
+                        </div>
+                        <div class="icon">
+                            <img src="images/demo.png" alt=""><a href=""><h3>demo</h3></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/cap.PNG" alt="">
+                <div class="detail_container">
+                    <p class="titre">
+                        Application Desktop
+                    </p>
+                    <p class="detail">
+                        Application de gestion d'une mutuelle 
+                        avec Java et MySQL sur Netbeans IDE 8.O
+                    </p>
+                    <div class="touticon">
+                        <div class="icon">
+                            <img src="images/code.png" alt=""><a href=""><h3>code</h3></a>
+                        </div>
+                        <div class="icon">
+                            <img src="images/demo.png" alt=""><a href=""><h3>demo</h3></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/cap.PNG" alt="">
+                <div class="detail_container">
+                    <p class="titre">
+                        Application Desktop
+                    </p>
+                    <p class="detail">
+                        Application de gestion d'ordre de Mission
+                        avec Java et MySQL sur Netbeans IDE 8.O
+                    </p>
+                    <div class="touticon">
+                        <div class="icon">
+                            <img src="images/code.png" alt=""><a href=""><h3>code</h3></a>
+                        </div>
+                        <div class="icon">
+                            <img src="images/demo.png" alt=""><a href=""><h3>demo</h3></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/cap.PNG" alt="">
+                <div class="detail_container">
+                    <p class="titre">
+                        Application Desktop
+                    </p>
+                    <p class="detail">
+                        Application de gestion d'enregistrement de dossier
+                        avec WLangage sur WinDev
+                    </p>
+                    <div class="touticon">
+                        <div class="icon">
+                            <img src="images/code.png" alt=""><a href=""><h3>code</h3></a>
+                        </div>
+                        <div class="icon">
+                            <img src="images/demo.png" alt=""><a href=""><h3>demo</h3></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="C2" class="grand_titre">Compétences</p>
+    <div class="body">
+        
+        <div class="skills">
+            <div class="skill">
+                <div class="skill-name">HTML/CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="60%" style="max-width: 60%;"></div>
+                </div>
+            </div>
+    
+            <div class="skill">
+                <div class="skill-name">PHP</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="30%" style="max-width: 30%;"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">MySQL</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="40%" style="max-width: 40%;"></div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <footer>
+        <div class="contact_contact">
+            <p id="C3" class="grand_titre">Contact</p>
+            <p class="message">N'hésitez pas à me contacter pour discuter de vos projets ou pour toute autre question.</p>
+            <div class="contact">
+                <div class="contact-container">
+                    <!-- Informations de contact -->
+                    <div class="contact-info">
+                        <div class="info-box">
+                            <i class="fas fa-envelope"></i>
+                            <h3>E-mail</h3>
+                            <p>topegnamien10@gmail.com</p>
+                        </div>
+                        <div class="info-box">
+                            <i class="fas fa-phone-alt"></i>
+                            <h3>Téléphone</h3>
+                            <h4>+225 07 47 90 10 81</h4>
+                        </div>
+                        <div class="info-box">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Localisation</h3>
+                            <h4>Abidjan, Côte d'Ivoire</h4>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        
+        <div class="bas_page">
+            &copy;Jeks.dev. Tous droits réservés.
+        </div>
+    </footer>
+
+    <!-- Pour le navbar responsible -->
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+            }
+    </script>
+
+</body>
+</html>

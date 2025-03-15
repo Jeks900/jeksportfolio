@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="apropos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="entete">
+            <div class="log">
+                <img src="images/monlogo.png" alt="">
+            </div>
+            
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img src="images/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="" style="height: 30px; width: 30px;"></a></li>
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="service.html" >Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="apropos.html" class="active">A propos</a></li>
+            </ul>
+
+            <ul class="menu">
+                <li class="hideOnMobile"><a href="index.html" >Accueil</a></li>
+                <li class="hideOnMobile"><a href="service.html" >Services</a></li>
+                <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+                <li class="hideOnMobile"><a href="apropos.html" class="active">A propos</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><img src="images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="" style="height: 30px; width: 30px;"></a></li>
+            </ul>
+        </nav>
+
+        <section class="about">
+            <h1>À propos de moi</h1>
+            <p class="intro">Passionné par le développement web depuis plus de 5 ans, je crée des expériences 
+                numériques innovantes et performantes pour mes clients.</p>
+    
+            <!-- Parcours Professionnel -->
+            <div class="experience">
+                <div class="direction">
+                        <img src="images/calender.png" alt=""><h2> Parcours Professionnel</h2>
+                </div>
+                <div class="job">
+                    <span class="date">2024</span>
+                    <div class="details">
+                        <h3>Développeur Web(Stagiaire)</h3>
+                        <a href="#">Service Informatique</a>
+                        <p>Création d'une application desktop WinDev</p>
+                    </div>
+                </div>
+    
+                <div class="job">
+                    <span class="date">2023</span>
+                    <div class="details">
+                        <h3>Informaticien</h3>
+                        <a href="#">Accueil et Service Informatique</a>
+                        <p>Formation des agents et Geston du Service Informatique.</p>
+                    </div>
+                </div>
+    
+                <div class="job">
+                    <span class="date">2022</span>
+                    <div class="details">
+                        <h3>Développeur Web(Stagiaire)</h3>
+                        <a href="#">Service Informatique</a>
+                        <p>Création d'une application desktop avec Java.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Formation et Certifications -->
+            <div class="directionA">
+                <img src="images/formation.png" alt=""><h2> Formation</h2>
+            </div>
+            <div class="education-certifications">
+                
+                <div class="education">    
+                    <div class="card">
+                        <h3>Licence option Développement d'Application et Système d'Information</h3>
+                        <p>ESATIC</p>
+                        <span>2023 - 2024</span>
+                    </div>
+                </div>
+
+                <div class="education">    
+                    <div class="card">
+                        <h3>BTS option Informatique Développement d'Application</h3>
+                        <p>ITA Bouaké</p>
+                        <span>2022 - 2023</span>
+                    </div>
+                </div>
+
+            </div>
+    
+        </section>
+
+    <div class="bas_page">
+        &copy;John.dev. Tous droits réservés.
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+            }
+    </script>
+</body>
+</html>
